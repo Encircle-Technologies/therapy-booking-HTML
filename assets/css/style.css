@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -54,7 +54,7 @@
   h4,
   h5,
   h6 {
-    @apply m-0 font-JosefinSans font-400 uppercase tracking-02em;    
+    @apply m-0 !font-Philosopher font-400 uppercase tracking-02em;    
     -webkit-font-smoothing: antialiased;
   }
 
@@ -438,10 +438,10 @@
     @apply absolute top-0 left-0 h-full w-full bg-gradient1;
   }
   .banner__contentelementtitle h1 {
-    @apply font-700 text-white font-JosefinSans tracking-02em uppercase;
+    @apply font-400 text-white tracking-02em capitalize;
   }
   .banner__contentelementdesc p {
-    @apply text-16 leading-23 text-gray font-Lato font-300 tracking-02em;
+    @apply text-18 leading-23 text-gray font-Lato font-600 tracking-02em;
   }
   .banner #custom-seekbar{  
     @apply pointer-events-none h-[4px] overflow-hidden relative w-full mt-[-2px];       
@@ -504,13 +504,13 @@
   .zigzag-styleone__contentdesc p {
     @apply text-16 leading-23 font-Lato font-300 tracking-02em text-gray;
   }
-  .zigzag-styleone__imageleft .container-fluid-xl {
+  .zigzag .container-fluid-xl {
     @apply lg:pl-0 !important;
   }
   .zigzag-styleone__imageleft .zigzag-styleone__imagemain {
     @apply lg:pr-[22px];
   }
-  .zigzag-styleone__imageleft .zigzag-styleone__content {
+  .zigzag .zigzag-styleone__content {
     @apply xxl:pl-60 lg:pl-30;
   }
   .zigzag-styleone__imageright .zigzag-styleone__imagemain {
@@ -613,16 +613,22 @@
     @apply content-[''] absolute top-0 left-0 w-full h-full bg-gradient1;
   }
   .journeyslider__itemsboxlabel p {
-    @apply flex items-start text-14 leading-14 tracking-02em font-JosefinSans uppercase text-white font-400;
+    @apply flex items-start text-16 leading-16 tracking-02em font-Philosopher uppercase text-white font-700;
   }
   .journeyslider__itemsboxlabel p img {
     @apply w-[16px] object-contain mr-[8px] mt-[-3px];
   }
   .journeyslider__itemsboxtitle a {
-    @apply xxl:text-48 xxl:leading-[52px] lg:text-36 lg:leading-46 text-20 leading-30 font-JosefinSans font-700 uppercase text-white;
+    @apply xxl:text-[38px] xxl:leading-[48px] tracking-02em lg:text-36 lg:leading-46 text-20 leading-30 font-Philosopher font-400 capitalize text-white;
   }
   .journeyslider__itemsboxdesc p {
-    @apply text-14 leading-14 tracking-02em text-white font-400 uppercase font-JosefinSans;
+    @apply text-14 leading-14 tracking-02em text-white font-400 uppercase font-Philosopher;
+  }
+  .journeyslider__itemsboxcontent {
+    @apply z-2;
+  }
+  .journeyslider__items:after{
+    @apply content-[''] absolute bottom-0 left-0 w-full h-full block bg-gradient5 z-1;
   }
   /* Journey Slider End */
 
@@ -631,7 +637,7 @@
     @apply lg:h-[460px] sm:h-[400px] h-[350px] relative transition-all duration-500 ease-in-out hover:opacity-75;
   }
   .peopleslider__contenttitle h4 {
-    @apply lg:text-20 lg:leading-[52px] text-16 leading-30 font-JosefinSans font-700 uppercase text-white;
+    @apply lg:text-20 lg:leading-[52px] text-16 leading-30 font-Philosopher font-700 uppercase text-white;
   }
   .peopleslider__contentpostname p {
     @apply text-14 leading-14 tracking-02em uppercase font-JosefinSans font-400 text-white;

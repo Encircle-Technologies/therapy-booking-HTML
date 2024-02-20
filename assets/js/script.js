@@ -199,74 +199,6 @@ $(document).ready(function () {
 //     document.getElementById('custom-seekbar').className = 'custom-seekbarfull';
 // };
 
-// Destinations Thumbslider
-if ($(".destinations-thumbslider-wrapper").length) {
-    var slider = new Swiper(".destinationsthumbslider__sliderloop", {
-        slidesPerView: 1.27,
-        spaceBetween: 36,
-        centeredSlides: true,
-        loop: true,
-        speed: 1500,
-        grabCursor: true,
-        loopedSlides: 9,
-        breakpoints: {
-            100: {
-                slidesPerView: 1.2,
-                spaceBetween: 15,
-            },
-            640: {
-                slidesPerView: 1.2,
-                spaceBetween: 15,
-            },
-            768: {
-                slidesPerView: 1.2,
-                spaceBetween: 25,
-            },
-            1024: {
-                slidesPerView: 1.27,
-                spaceBetween: 36,
-            },
-        },
-    });
-
-    var thumbs = new Swiper(".destinationsthumbslider__thumbs", {
-        slidesPerView: "9",
-        // spaceBetween: 32,
-        centeredSlides: false,
-        loop: true,
-        speed: 1500,
-        slideToClickedSlide: true,
-        grabCursor: true,
-        breakpoints: {
-            100: {
-                slidesPerView: 2,
-                centeredSlides: true,
-                loop: true,
-            },
-            640: {
-                slidesPerView: 4,
-                centeredSlides: true,
-                loop: true,
-            },
-            768: {
-                slidesPerView: 6,
-                centeredSlides: true,
-                loop: true,
-            },
-            1024: {
-                slidesPerView: 6,
-                loop: true,
-            },
-            1366: {
-                slidesPerView: 9,
-                loop: true,
-            },
-        },
-    });
-
-    slider.controller.control = thumbs;
-    thumbs.controller.control = slider;
-}
 
 // Journey Slider
 if ($(".journeyslider-wrapper").length) {
@@ -309,48 +241,6 @@ if ($(".journeyslider-wrapper").length) {
     });
 }
 
-// People Slider 
-if ($(".peopleslider-wrapper").length) {
-    var peopleslider = new Swiper(".peopleslider__loop", {
-        loop: true,
-        speed: 2000,
-        slidesPerView: 4.4,
-        grabCursor: true,
-        centeredSlides: true,
-        spaceBetween: 40,
-        breakpoints: {
-            100: {
-                slidesPerView: 1.2,
-                spaceBetween: 15,
-            },
-            375: {
-                slidesPerView: 1.6,
-                spaceBetween: 20,
-            },
-            640: {
-                slidesPerView: 2.2,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 2.3,
-                spaceBetween: 30,
-            },
-            1024: {
-                slidesPerView: 2.8,
-                spaceBetween: 30,
-            },
-            1366: {
-                slidesPerView: 3.6,
-                spaceBetween: 40,
-            },
-            1600: {
-                slidesPerView: 4.4,
-                spaceBetween: 40,
-            },
-        },
-    });
-}
-
 // Review Slider
 if ($(".reviewslider-wrapper").length) {
     var peopleslider = new Swiper(".reviewslider__loop", {
@@ -381,39 +271,6 @@ if ($(".reviewslider-wrapper").length) {
     });
 }
 
-// Instagram Slider
-if ($(".instaslider-wrapper").length) {
-    var swiper = new Swiper(".instagram-slider", {
-        slidesPerView: 4.1,
-        loop: true,
-        speed: 1000,
-        grabCursor: true,
-        centeredSlides: true,
-        spaceBetween: 24,
-        breakpoints: {
-            100: {
-                slidesPerView: 2.2,
-                spaceBetween: 20,
-            },
-            640: {
-                slidesPerView: 3.2,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 3.2,
-                spaceBetween: 24,
-            },
-            1024: {
-                slidesPerView: 4.1,
-                spaceBetween: 24,
-            },
-            1600: {
-                slidesPerView: 6.1,
-                spaceBetween: 24,
-            },
-        },
-    });
-}
 
 // Match Heigh Js
 $(function () {
@@ -464,87 +321,6 @@ if ($(".journeylist-wrapper").length) {
             }
         });
     })
-}
-
-// Modal Slider
-if ($(".custom-popup-slider").length) {
-    var popupslider = new Swiper(".custom-popup-sliderlopp", {
-        loop: true,
-        speed: 1200,
-        slidesPerView: 1,
-        effect: 'fade',
-        autoHeight: true,
-        autoplay: {
-            delay: 1200,
-        },
-        navigation: {
-            nextEl: '.popupswiper-button-next',
-            prevEl: '.popupswiper-button-prev',
-        },
-    });
-}
-
-// Halfslider with Popup
-if ($(".halfslider-popup__slidermain").length) {
-    var halfslider = new Swiper(".halfslider-popup__loop", {
-        slidesPerView: 3.3,
-        // loop: true,
-        speed: 1500,
-        grabCursor: true,
-        spaceBetween: 32,
-        breakpoints: {
-            100: {
-                slidesPerView: 1.2,
-                spaceBetween: 20,
-            },
-            640: {
-                slidesPerView: 2.1,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 2.3,
-                spaceBetween: 24,
-            },
-            1024: {
-                slidesPerView: 2.4,
-                spaceBetween: 32,
-            },
-            1600: {
-                slidesPerView: 3.3,
-                spaceBetween: 32,
-            },
-        },
-    });
-}
-
-// Popular Destinations Slider
-if ($(".populerdestinations-slider-wrapper").length) {
-    var peopleslider = new Swiper(".populerdestinationsslider__sliderloop", {
-        loop: true,
-        speed: 2000,
-        slidesPerView: 2.2,
-        grabCursor: true,
-        centeredSlides: true,
-        autoHeight: true,
-        autoplay: {
-            delay: 1200,
-        },
-        spaceBetween: 35,
-        breakpoints: {
-            100: {
-                slidesPerView: 1.2,
-                spaceBetween: 15,
-            },
-            1024: {
-                slidesPerView: 1.9,
-                spaceBetween: 30,
-            },
-            1600: {
-                slidesPerView: 2.2,
-                spaceBetween: 35,
-            },
-        },
-    });
 }
 
 // Sliderzigzag Slider
@@ -628,57 +404,6 @@ if ($(".slider-popup-wrapper").length) {
             },
         },
     });
-}
-
-// Modal Slider
-if ($(".custom-popup-slider").length) {
-    var projectpopupslider = new Swiper(".projectpopupslider__loop", {
-        loop: true,
-        speed: 1200,
-        slidesPerView: 1,
-        effect: 'fade',
-        autoHeight: true,
-        autoplay: {
-            delay: 1200,
-        },
-        navigation: {
-            nextEl: '.popupswiper-button-next',
-            prevEl: '.popupswiper-button-prev',
-        },
-    });
-}
-
-// Journy Single Slider
-if ($(".journey-singlezigzag-wrapper").length) {
-    var journeysingleslider = new Swiper(".journey__zigzaggallery", {
-        loop: true,
-        speed: 1200,
-        slidesPerView: 1,
-        effect: 'fade',
-        autoHeight: true,
-        autoplay: {
-            delay: 1200,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-        },
-    });
-}
-
-// Listing Grid Load More
-if ($(".listing-grid-wrapper").length) {
-    $(document).ready(function () {
-        $(".listinggrid__itemloadmore").slice(0, 9).show();
-        $("#listinggrid__loadmore").on("click", function (e) {
-            e.preventDefault();
-            $(".listinggrid__itemloadmore:hidden").slice(0, 3).slideDown();
-            if ($(".listinggrid__itemloadmore:hidden").length == 0) {
-                // $("#loadMore").text("No Content").addClass("noContent");
-                $('.listinggrid__loadmorebtn').css('display', 'none');
-            }
-        });
-    })
 }
 
 // Accordion Js
@@ -769,20 +494,7 @@ $(document).ready(function () {
     }
 });
 
-// Journey Single Tabs
-if ($('.journey-singlezigzagtab').length) {
-    $(document).ready(function () {
-        $("ul.journeytabs li").click(function () {
-            var tab_id = $(this).attr("data-tab");
 
-            $("ul.journeytabs li").removeClass("current");
-            $(".journeytab-content").removeClass("current");
-
-            $(this).addClass("current");
-            $("#" + tab_id).addClass("current");
-        });
-    });
-}
 
 // Scrollabel Content
 $('.journeysinglezigzag__details').scroll(function () {
@@ -802,19 +514,4 @@ $('.journeysinglezigzag__details').scroll(function () {
     }
 });
 
-//Map swiper
-if ($('.location-map-wrapper').length) {
-    var swiper = new Swiper(".location-map__loop", {
-        loop: true,
-        speed: 1000,
-        slidesPerView: 1,
-        grabCursor: true,
-        centeredSlides: true,
-        spaceBetween: 30,  
-        navigation: {
-            nextEl: ".location-next",
-            prevEl: ".location-prev",
-        },
-    });
-};
 

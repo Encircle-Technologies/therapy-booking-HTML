@@ -15,7 +15,8 @@ module.exports = {
     theme: {
         fontFamily: {        
             JosefinSans: ['"Josefin Sans", sans-serif'],                        
-            Lato: ['"Lato", sans-serif']                                    
+            Lato: ['"Lato", sans-serif'],   
+            Philosopher: ['"Philosopher", sans-serif']                                
         },
         flex: {
             '1': '1 1 0%',
@@ -205,6 +206,7 @@ module.exports = {
             'gradient2': 'linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%)',            
             'gradient3': 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%)',             
             'gradient4': 'linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))',  
+            'gradient5': 'linear-gradient(0deg, rgb(0 0 0 / 94%) 10%, rgb(0 0 0 / 20%) 32%)',
         }),  
         borderRadius: {
             none: '0',
